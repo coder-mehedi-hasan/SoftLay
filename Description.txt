@@ -7,7 +7,7 @@ If You wanted to see our Website ,you go to login.html and enter username and pa
 If your dont have password and username then you can use default username and password.
 Our Default Password and username is given included  'user.text'.
 
-Now we are present Our WebPages Feature List ::>
+Now we are present Our WebPages Feature List ::>>
 
     => Support External Image Urls
     => Easy Easy and Easy Build with Friendly Theme Options
