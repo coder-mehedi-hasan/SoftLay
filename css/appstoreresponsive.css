@@ -1,14 +1,4 @@
-@media (min-width: 320px) and (max-width: 575.98px) {
-
-
-    .container {
-        width: 320px;
-        margin: 0 auto;
-      }
-      .col-lg-3 {
-        margin: -4px -1% 38px 0%;
-      }
-    
+@media (min-width: 320px) and (max-width: 575px) {
     #top_games .card {
       width: 20.5rem;
       height: 11.5rem;
@@ -22,90 +12,61 @@
 }
 @media (min-width: 320px) and (max-width: 575px) {
     #app_store .colum_inner h2 {
-        font-size: 60px;
-        font-weight: 400;
-        margin-left: 200px;
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: 0;
     }
     #app_store .colum_inner h2::before {
-        bottom: -15px;
-        left: 42px;
-        height: 1px;
-        width: 419px;
-        max-width: 322%;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        width: 50px;
     }
     #app_store .colum_inner h2::after {
-        left: 41px;
-        width: 310px;
-    }
-    #app_store .colum_inner ul {
-        width: 240%;
-        margin-left: 18px;
-        margin-top: 85px;
+        left: 0;
+        width: 50px;
+        bottom: -12px;
     }
     #app_store .colum_inner ul li {
-        font-size: 38px;
-        padding-left: 58px;
-        padding-top: 23px;
-        padding-bottom: 20px;
+        font-size: 14px;
     }
     #app_store .colum_inner ul li i {
-        font-size: 24px;
-        padding-right: 15px;
+        font-size: 14px;
+        padding-right: 10px;
     }
     #app_store .Last_app h2 {
-        font-size: 48px;
-        margin-left: 245px;
-        width: 130%;
-        font-weight: 400;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        font-size: 20px;
+        margin-top: 10px;
     }
     #app_store .Last_app h2::before {
         bottom: -16px;
-        left: 29px;
-        width: 252px;
+        width: 100%;
     }
     #app_store .Last_app h2::after {
-        left: 28px;
-        width: 254px;
-    }
-    #app_store .colum_right .card {
-        height: 555px;
-        width: 230%;
-        margin-left: 34px;
-        margin-bottom: 40px;
-    }
-    #app_store .colum_right img {
-        width: 558px;
-        padding-top: 60px;
-    }
-    #app_store .colum_right .card {
-        height: 1050px;
+        width: 100%;
     }
     #app_store .colum_right .card_text {
         margin-top: 33px;
         padding-left: 58px;
     }
     #app_store .icons a {
-        font-size: 38px;
+        font-size: 16px;
         margin-left: -6px;  
     }
     #app_store .colum_right p {  
-        font-size: 45px;
+        font-size: 16px;
     }
     #app_store .colum_right .dollar {
-        font-size: 40px;   
+        font-size: 16px;   
     }
     #app_store .colum_right  span {  
-        font-size: 20px;
+        font-size: 16px;
     }
     #app_store .colum_right .button {
-        margin-top: 110px;
-        border-top: solid 1px #888;
+        margin-top: 20px;
     }
     #app_store .button a {
-        font-size: 35px;
-        color: #888;
+        font-size: 16px;
     }
     #app_store .colum_right .card_s_text {
         margin-top: 90px;
@@ -116,56 +77,35 @@
         height: 1430vh;
     }
     #app_store .section_3 .main .item {
-        width: 110%;
-        margin-bottom: 50px;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    #app_store .section3_h2 h2 {   
-        border-top: double 7px;
-        border-bottom: double 10px;
-        margin-left: 44px;
-        font-size: 75px;
+    #app_store .section3_h2 h2 {
+        margin: 0;
+        font-size: 30px;
     }
-    #app_store .section_3 .main .item img {
-        width: 670px;
-        margin-left: 44px;
+    #top_games .text_h1 {
+        font-size: 28px;
     }
-    #app_store .section_3 .main .item .card_text {   
-        width: 647px;
+    #top_games .card {
+        width: 100% !important;
+        height: fit-content;
     }
-    #app_store .section_3 .main .item .card_text {
-        width: 670px;
-        margin-left: 43px;
+    #browse {
+        background-color: red;
+        padding:0;
     }
-    #app_store .section_3 .main .item .mini_card img {
-        width: 170px;   
-        top: 55%;
-        left: 40px;
+    #top_games h2::before {
+        display: none;
     }
-    #app_store .section_3 .main .item .icons ul {   
-        margin-left: 210px;
+    #top_games h2::after {
+        display: none;
     }
-    #app_store .icons a {
-        font-size: 32px;   
+    #browse {
+        display: none;
     }
-    #app_store .section_3 .main .item .card_text p {
-        font-size: 44px;
-        margin-top: 87px;
-        padding-left: 39px;
-    }
-    #app_store .section_3 .main .item .card_text .prize {
-        padding-left: 42px;  
-    }
-    #app_store .section_3 .main .item .card_text .dollar {
-        font-size: 40px;
-    }
-    #app_store .section_3 .main .item .card_text  span {   
-        font-size: 20px;
-    }
-    #app_store .section_3 .main .item .button {
-        margin-top: 75px;
-        border-top: solid 1px black;
-        padding-top: 15px;
-        padding-bottom: 28px;
+    img{
+        width: 100%;
     }
 }
 @media (min-width: 576px) and (max-width: 778px){
@@ -178,5 +118,8 @@
     }
     #app_store .colum_right .card {
         width: 33%;
+    }
+    #app_store .colum_inner h2::before {
+        width: 0;
     }
 }

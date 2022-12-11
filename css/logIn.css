@@ -71,6 +71,7 @@ li{
     background-image: linear-gradient(to right,#2BA5D7,#230c81);
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 #logIn .main .first_item .detail::before{
     content: '';
@@ -90,7 +91,6 @@ li{
 #logIn .main .second_item h3{
     font-size: 35px;
     font-weight: 700;
-    letter-spacing: 3px;
     font-family: 'Roboto',sans-serif;
 }
 #logIn .main .second_item input{

@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.showcase_slider').slick({
         infinite: true,
         arrows:false,
-        speed: 300,
+        speed: 500,
         dots:false,
         autoplay:true,
         autoplaySpeed : '700'
@@ -96,6 +96,10 @@ $(document).ready(function(){
     });
 });
 
+function logOut(){
+    window.location.href = '../logIn.html'
+}
+
 // berfiller 
 $(document).ready(function(){
 
@@ -138,10 +142,10 @@ $("#detailfourBtn").click(function(){
 });
 // app  quality function
 function appQualityFunction(item1,item2,item3,item4){
-    item1.show(500)
-    item2.hide(500)
-    item3.hide(500)
-    item4.hide(500)
+    item1.show(300)
+    item2.hide(300)
+    item3.hide(300)
+    item4.hide(300)
 }
 // button color function 
 function appBtnQualityFunction(item1,item2,item3,item4) { 
