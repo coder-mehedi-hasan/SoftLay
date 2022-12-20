@@ -237,5 +237,8 @@ $(document).ready(function() {
         $("#ownerThreeImg").attr("src", "../images/devloper (2).jpg");
     });
  });
-
-
+ $(document).ready(function(){
+    $('#hide').click(function(){
+        $('.one').toggle()
+    })
+})

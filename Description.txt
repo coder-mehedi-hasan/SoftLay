@@ -2,7 +2,7 @@ Hello sir, We are from IAJS-2203 Team_B at Creative It Institute.
 Before some days you saying as we create a website.So, We created a simple website is name of SoftLay .
 Our Webpage SoftLay is a multipurpose  theme for App showcase, Appstore, App Landing, Business and Shopping. 
 SoftLay is multipages website . Our website some pages like that HOME,  APPSTORE, FEATURES, BLOG, CONTACT. 
-You can  LogOut, Login  both of there.
+You can  LogOut, Login & Sign In all of there.
 If You wanted to see our Website ,you go to login.html and enter username and password .
 If your dont have password and username then you can use default username and password.
 Our Default Password and username is given included  'user.text'.

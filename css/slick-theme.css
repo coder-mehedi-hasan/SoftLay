@@ -69,14 +69,11 @@
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
-
     opacity: .75;
     color: white;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .slick-prev
 {
     left: -25px;
@@ -88,11 +85,19 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
+    height: 40px;    
+    width: 120px;
+    background-color: #fff;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '<';
+    height: 40px;    
+    width: 120px;
+    background-color: #fff;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
 }
 
 .slick-next
@@ -103,14 +108,27 @@
 {
     right: auto;
     left: -25px;
+    
+    height: 15px;    
+    width: 15px;
+    background-color: red;
+    
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
+    height: 40px;    
+    width: 120px;
+    background-color: #fff;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%);
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '>';
+    height: 40px;    
+    width: 120px;
+    background-color: #fff;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%);
 }
 
 /* Dots */

@@ -6,9 +6,6 @@ app_store css start
     padding: 0;
     box-sizing: border-box;
 }
-ul{
-    text-decoration: none;
-}
 li{
     list-style: none;
     display: inline-block;
@@ -16,13 +13,10 @@ li{
 a{
     text-decoration: none;
 }
-.conatiner{
-    width: 1320px;
-    margin: 0 auto;
-}
 body{
     font-family: 'Oswald', sans-serif;
     background-color: #eeeeee;
+    position: relative;
 }
 /* common css done */
 
@@ -43,7 +37,6 @@ section 2
     background-size: cover;
     height: 100vh;
 }
-
 .post-overlay{
     top: 70%;
     left: 20%;
@@ -57,11 +50,6 @@ section 2
     width: 28%;
     
 }
-
-
-  
- 
-
 .post-overlay .ico img{
     position: absolute;
     top: -20%;
@@ -69,9 +57,6 @@ section 2
     height: 100px;
     width: 100px;
 }
-
-
-
 .post-overlay .cit{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
@@ -110,9 +95,6 @@ section 2
     opacity: 1 !important;
     left: 100%;
   }
-
-
-
 /* ==========
 section2 css 
 ==========*/
@@ -714,26 +696,18 @@ color: #77a464;
     padding: 2px 20px 18px;
     transition: all .25s ease-out;
 }
-
 /* staff end */
-
-
 /* top_games start */
-
 #top_games{
     background-color: #fff;
 }
-
 #top_games .main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
     margin-top: 30px;
-
 }
-
 #top_games .text_h1{
- 
     font-family: "Oswald", Times, serif;
     font-weight: 100;
     font-size: 60px;
@@ -744,7 +718,6 @@ color: #77a464;
     text-align: center!important;
     position: relative;
 }
-
 #top_games h2:before {
     content: '';
     position: absolute;
@@ -779,9 +752,6 @@ color: #77a464;
     width: 100%;
     height: 20.5rem;
 }
-
-
-
 #top_games .grip-app-icon {
     width: 60px;
     margin-right: 15px;
@@ -789,7 +759,6 @@ color: #77a464;
     float: left;
 }
 #top_games .grid-item {
- 
     width: 300px;
     max-width: 100%;
     display: inline-block;
@@ -863,7 +832,6 @@ color: #77a464;
 .app-item .app-thumbnail img{
     position: relative;
 }
-
 .grid-overlay {
     position: absolute;
     bottom: 0;
@@ -871,8 +839,6 @@ color: #77a464;
     right: 0;
     color: rgba(255,255,255,.75);
     background: rgba(34,34,34,.8);
-
-   
 }
 .grid-overlay :hover {
   opacity: 1;
@@ -886,7 +852,6 @@ color: #77a464;
     display: table;
     clear: both;
 }
-
 .grid-has-icon .overlay-top:after {
     display: none;
 }
@@ -895,9 +860,7 @@ color: #77a464;
     padding: 2px 20px 18px;
     transition: all .25s ease-out;
 }
-
 /* top_games end */
-
 /* browse start */
 #browse{
     background-color: #eeee;
@@ -911,13 +874,11 @@ color: #77a464;
     font-size: 20px;
     padding: 15px 20px;
     color: #fff;
-
 }
 #browse .btn:hover{
     background: rgb(110, 109, 109);
     border: rgb(84, 83, 83);
     color: #fff;
-
 }
 /*********footer*******************/
 .kilimanjaro_area {

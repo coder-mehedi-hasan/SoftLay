@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/appstore.css">
   <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../css/appstoreresponsive.css">
 </head>
 <body id="appstore">
    <!-- navbar start -->
@@ -127,7 +126,6 @@
     <!-- ====================
         app store start
     ======================== -->
-
     <!-- section 1 -->
     <section id="app_store">
      <div class="banner">         
@@ -1070,8 +1068,6 @@
     </div>
   </div>
   <!-- shop end  -->
-  
-  
   <section id="browse">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -1091,8 +1087,6 @@
       </div>
     </nav>
   </section>
-  
-
   <!-- footer start  -->
   <footer id="footer">
     <div class="container">
@@ -1195,8 +1189,19 @@
     </div>
   </footer>
   <!-- footer end  -->
+  <!-- cursor start  -->
+  <div id="cursor_store" class="cursor"></div>
+  <script>
+    let cursor_store = document.getElementById('cursor_store')
+    document.onmousemove = function(e){
+      cursor_store.style.left = (e.pageX - 10) + "px";
+      cursor_store.style.top = (e.pageY - 10) + "px";
+      cursor_store.style.display = 'block';
+  }
+  </script>
+  <!-- cursor end -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="../js/jquery-3.6.1.min.js"></script>
-  <script src="../js/home.js"></script>  
+  <script src="../js/main.js"></script>  
 </body>
 </html>
