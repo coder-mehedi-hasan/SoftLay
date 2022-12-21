@@ -1563,7 +1563,7 @@ a{
 .animation span{
     display: inline-block;
     position: absolute;
-	opacity: 0.4;
+	opacity: 0.2;
 }
 .animation span:nth-child(1) {
     left: 30px;
