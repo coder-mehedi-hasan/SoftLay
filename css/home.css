@@ -345,6 +345,7 @@ a{
 #prospectus{
 	padding: 100px 0 50px 0;
 	background-color: #F2F2F2;
+	position: relative;
 }
 #prospectus .item{
 	width: 22%;
@@ -714,6 +715,7 @@ a{
 	line-height: 50px;
 	color: #C8385E;
 	font-size: 30px;
+	position: relative;
 }
 #devloper .info{
 	width: 200px;
@@ -1549,3 +1551,154 @@ a{
 	text-align: center;
 }
 /* css for js element end */
+/* animation */
+.animation{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+}
+.animation span{
+    display: inline-block;
+    position: absolute;
+	opacity: 0.4;
+}
+.animation span:nth-child(1) {
+    left: 30px;
+    top: 100px;
+}
+ .animation span:nth-child(2) {
+    right: 100px;
+    top: 100px;
+}
+.animation span:nth-child(3){
+    left: 30px;
+    top: 600px;
+}
+.animation span:nth-child(4){
+    right: 100px;
+    top: 400px;
+}
+.animation span:nth-child(5){
+    left: 30%;
+    top: 150px;
+}
+.animation span:nth-child(6){
+    left: 50%;
+    top: 250px;
+}
+.animation span:nth-child(7){
+    left: 50px;
+    top: 200px;
+}
+.animation span:nth-child(8){
+    left: 45%;
+    top: 170px;
+}
+.animation span:nth-child(9){
+    left: 95%;
+    top: 280px;
+}
+.animation span:nth-child(10) {
+    left: 35%;
+    top: 340px;
+}
+.animation span:nth-child(11) {
+    left: 15%;
+    top: 350px;
+}
+.animation span:nth-child(12){
+    left: 240px;
+}
+.animation span:nth-child(13) {
+    left: 52%;
+    top: 30px;
+}
+.animation span:nth-child(14) {
+    left: 50%;
+    top: 380px;
+}
+.animation .cross{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(200, 56, 94);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    animation: animateCross 6s infinite linear;
+}
+.animation .fillCircle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #c8385e;
+}
+.animation .bordercircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid #5c5c5c;
+}
+.animation .smallcircle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #767676;
+}
+
+.animation .bigcircle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.animation .bigcircletwo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid #c8385e;
+}
+.animation .animationSpan{
+    position: relative;
+}
+
+.animation .circle{
+    animation: circlenimate 8s linear infinite;
+}
+
+#devloper .icon i::after{
+	content: '';
+	height: calc(100% + 20px);
+	width: calc(100% + 20px);
+	background-color: rgb(244, 10, 72,0.5);
+	position: absolute;
+	top: -12px;
+	left: -10px;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	z-index: -1;
+	animation: devloperanimate 4s infinite linear;
+}
+@keyframes devloperanimate {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animateCross {
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes circlenimate {
+    0%{
+        transform: scale(.6);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.6);
+    }
+}
+/* animation */
