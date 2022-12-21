@@ -1555,9 +1555,10 @@ a{
 .animation{
     height: 100%;
     position: absolute;
-    left: 0;
+    left: 50%;
+	transform: translate(-50%);
     top: 0;
-    width: 100%;
+    width: 80%;
     z-index: -999;
 }
 .animation span{

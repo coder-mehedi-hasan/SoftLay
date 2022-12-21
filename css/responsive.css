@@ -37,7 +37,7 @@
         flex-wrap: wrap;
     }
     #banner .main .item{
-        width: 100%;
+        width: 320px;
         margin: 10px 0;
     }
     #banner .main .itemOne {
