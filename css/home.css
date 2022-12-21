@@ -423,6 +423,13 @@ a{
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #C8385E;
+	transition: 1s;
+}
+#main .title:hover h3::after{
+	width: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	transition: 1s;
 }
 /* title end */
 /* app profile start  */
@@ -754,7 +761,7 @@ a{
 #devloper ul button{
 	font-size: 0;
 }
-/* devloper end */
+/* devloper end-----01710725275 */
 /* owner start */
 #owner{
 	padding: 100px 0;
@@ -764,6 +771,20 @@ a{
 	width: 31%;
 	border-radius: 5px;
 	overflow: hidden;
+	padding: 5px;
+	position: relative;
+}
+#owner .item::after{
+	content: '';
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #C8385E;
+	z-index: -1;
+	transition: .4s;
+	animation: owneranimate 50s linear infinite;
 }
 #owner .item img{
 	width: 100%;
@@ -1421,42 +1442,6 @@ a{
 	transition-timing-function: ease-out;
 	z-index: 1;
 }
-
-/* animation start */
-@keyframes iconanimate {
-	0%{
-		transform: scale(1);
-	}25%{
-		transform: scale(1.2);
-	}50%{
-		transform: scale(1);
-	}75%{
-		transform: scale(1.2);
-	}100%{
-		transform: scale(1);
-	}
-}
-@keyframes profileimgone {
-	50%{
-		left: 26%;
-    	top: -107px;
-	}
-}
-@keyframes profileimgtwo {
-	50%{
-		left: 26%;
-    	top: -45px;
-	}
-}
-@keyframes popUpanimateToleft {
-	0%{
-		right: -100%;
-	}100%{
-		right: 0;
-	}
-}
-
-/* animation end */
 /* css for js element start */
 .popUpSearch{
 	width: 100%;
@@ -1551,7 +1536,7 @@ a{
 	text-align: center;
 }
 /* css for js element end */
-/* animation */
+/* animation start */
 .animation{
     height: 100%;
     position: absolute;
@@ -1564,7 +1549,7 @@ a{
 .animation span{
     display: inline-block;
     position: absolute;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 .animation span:nth-child(1) {
     left: 30px;
@@ -1667,8 +1652,22 @@ a{
 .animation .circle{
     animation: circlenimate 8s linear infinite;
 }
-
-#devloper .icon i::after{
+#devloper .icon{
+	position: relative;
+}
+#devloper .icon::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgb(244, 10, 72,0.5);
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 2;
+}
+#devloper .icon::after{
 	content: '';
 	height: calc(100% + 20px);
 	width: calc(100% + 20px);
@@ -1677,7 +1676,7 @@ a{
 	top: -12px;
 	left: -10px;
 	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	z-index: -1;
+	z-index: 1;
 	animation: devloperanimate 4s infinite linear;
 }
 @keyframes devloperanimate {
@@ -1702,4 +1701,61 @@ a{
         transform: scale(.6);
     }
 }
-/* animation */
+@keyframes owneranimate {
+	0%{
+		top: 0;
+		left: 0;
+	}25%{
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 5px;
+	}50%{
+		bottom: 0;
+		right: 0;
+		height: 5px;
+		width: 100%;
+	}75%{
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 5px;
+	}100%{
+		top: 0;
+		left: 0;
+	}
+}
+@keyframes iconanimate {
+	0%{
+		transform: scale(1);
+	}25%{
+		transform: scale(1.2);
+	}50%{
+		transform: scale(1);
+	}75%{
+		transform: scale(1.2);
+	}100%{
+		transform: scale(1);
+	}
+}
+@keyframes profileimgone {
+	50%{
+		left: 26%;
+    	top: -107px;
+	}
+}
+@keyframes profileimgtwo {
+	50%{
+		left: 26%;
+    	top: -45px;
+	}
+}
+@keyframes popUpanimateToleft {
+	0%{
+		right: -100%;
+	}100%{
+		right: 0;
+	}
+}
+
+/* animation end */
