@@ -1,42 +1,6 @@
 // variable declaration 
-const userName = document.getElementById('username')
-const userPassword = document.getElementById('password')
-const mentorName = ['creativeit','creativeitinstitute','creativeituttara','creativeitdhammondi','creativeitchattogram','Md Mehedi Hasan'] 
-const mentorPassword = ['creativeit','creativeitinstitute','01624666000','01624888444','01990779999','01913382360']
 
-// logIn button function 
-function logInFunction(){
-    // create incorrect message 
-    let div = document.createElement('div')
-    div.classList.add('incpassword')
-    // filter Array Name
-    findMentorByName = mentorName.filter(function(item){
-        return item == userName.value
-    })
-    // filter Array password
-    spcfcPasswordMentor = mentorPassword.filter(function(item){
-        return item == userPassword.value
-    })
 
-    if(userName.value == findMentorByName && userPassword.value == spcfcPasswordMentor){
-        window.location.href = 'pages/home.html'
-    }else if(userName.value != findMentorByName && userPassword.value != spcfcPasswordMentor){
-        div.innerHTML = 'your name & password is incorrect'
-        incorrectPassFun(userName,div)
-        incorrectPassFun(userPassword,div)
-    }
-    else if(userName.value != findMentorByName){
-        div.innerHTML = 'your name is incorrect'
-        incorrectPassFun(userName,div)
-        incorrectPassFun(userPassword,div)
-    }else if(userPassword.value != spcfcPasswordMentor){
-        div.innerHTML = 'your password is incorrect'
-        incorrectPassFun(userName,div)
-        incorrectPassFun(userPassword,div)
-    }
-    // incorrect messge append 
-    document.getElementById('formItem').appendChild(div)
-}
 // password Show
 function passwordShow(){
     userPassword.type = 'text'

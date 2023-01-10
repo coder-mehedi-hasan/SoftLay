@@ -97,7 +97,7 @@ $(document).ready(function(){
 });
 
 function logOut(){
-    window.location.href = '../logIn.html'
+    window.location.href = 'pages/logIn.html'
 }
 
 // berfiller 
