@@ -191,11 +191,11 @@ document.getElementById('appProfileSlider').addEventListener('click',() =>{
         <div class="position-relative">
         <div class="icon" id="idIcon"><i class="fa-solid fa-xmark"></i></div>
         <div id="appProfileSlideItems">
-            <div class="item"><img src="/images/app-showcase-x-1.png" alt="app_profile"></div>
-            <div class="item"><img src="/images/app-showcase-x-2.png" alt="app_profile"></div>
-            <div class="item"><img src="/images/app-showcase-x-3.png" alt="app_profile"></div>
-            <div class="item"><img src="/images/app-showcase-x-4.png" alt="app_profile"></div>
-            <div class="item"><img src="/images/app-showcase-x-5.png" alt="app_profile"></div>
+            <div class="item"><img src="images/app-showcase-x-1.png" alt="app_profile"></div>
+            <div class="item"><img src="images/app-showcase-x-2.png" alt="app_profile"></div>
+            <div class="item"><img src="images/app-showcase-x-3.png" alt="app_profile"></div>
+            <div class="item"><img src="images/app-showcase-x-4.png" alt="app_profile"></div>
+            <div class="item"><img src="images/app-showcase-x-5.png" alt="app_profile"></div>
         </div>
         </div>
     </div>
@@ -219,22 +219,22 @@ document.getElementById('appProfileSlider').addEventListener('click',() =>{
 // owner img event
 $(document).ready(function() {
     $("#ownerOne").mouseenter(function() {
-        $("#ownerOneImg").attr("src", "/images/hoverchange (1).jpg");
+        $("#ownerOneImg").attr("src", "images/hoverchange (1).jpg");
     });
     $("#ownerOne").mouseleave(function() {
-        $("#ownerOneImg").attr("src", "/images/devloper (3).jpg");
+        $("#ownerOneImg").attr("src", "images/devloper (3).jpg");
     });
     $("#ownerTwo").mouseenter(function() {
-        $("#ownerTwoImg").attr("src", "/images/hoverchange (2).jpg");
+        $("#ownerTwoImg").attr("src", "images/hoverchange (2).jpg");
     });
     $("#ownerTwo").mouseleave(function() {
-        $("#ownerTwoImg").attr("src", "/images/devloper (1).jpg");
+        $("#ownerTwoImg").attr("src", "images/devloper (1).jpg");
     });
     $("#ownerThree").mouseenter(function() {
-        $("#ownerThreeImg").attr("src", "/images/hoverchange (3).jpg");
+        $("#ownerThreeImg").attr("src", "images/hoverchange (3).jpg");
     });
     $("#ownerThree").mouseleave(function() {
-        $("#ownerThreeImg").attr("src", "/images/devloper (2).jpg");
+        $("#ownerThreeImg").attr("src", "images/devloper (2).jpg");
     });
  });
  $(document).ready(function(){
